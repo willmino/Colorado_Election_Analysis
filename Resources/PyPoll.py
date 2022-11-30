@@ -1,13 +1,29 @@
-# 1. The data we need to achieve
+#import our dependencies
 
-# 2. The total number of votes cast
+import os
+import csv
 
-# 3. The percentage of votes each candidate won.
+#create a variable set as the indirect path to the file we want to open to read
+file_to_load = os.path.join("Resources", "election_results.csv")
 
-# 4. The total number of votes each candidate won.
 
-# 5. The winner of the election based on popular vote.
+#create a variable set as the indirect path to the file we want to open and write
+file_to_save = os.path.join("analysis", "election_analysis.txt")
 
-# path to csv is
-# Resources/election_results.csv
 
+#open the results and read the file
+with open(file_to_load) as election_data:
+
+    file_reader = csv.reader(election_data)
+
+
+    # two lines below will print all of the rows of the csv file
+
+    #for row in file_reader:
+    #    print(row)
+
+    # two print the headers and then print the rows, use the two lines of code below
+
+    headers = next(file_reader)
+
+    print(headers)
