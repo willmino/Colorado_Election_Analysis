@@ -2,7 +2,7 @@
 
 ##Project Overview
 
-A Colorado Board of Elections employee gave me the following tasks to complete the election audit of a recent local congressional election.
+A Colorado Board of Elections employee gave me the following tasks to complete the election audit of a recent local congressional election. I used python to open a .csv file, read through the rows of the data to obtain counts and perform calculations and an analysis, and write the results of the analysis to another .txt file.
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of candidates who received votes.
