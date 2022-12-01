@@ -89,8 +89,8 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(election_results)
 
     # In order to print each candidates results, iterate through the dictionary candidate_votes
-    # candidate_votes[candidate_name] will acquire values of the values (votes) of the keys (candidate_name) so you can process them
-    # as votes and vote_percentage.
+    # candidate_votes[candidate_name] will acquire the values (votes) of the keys (candidate_name) from the dictionary 
+    # so you can use the values in the variables for votes and vote_percentage.
 
     for candidate_name in candidate_votes:
 
@@ -141,4 +141,3 @@ with open(file_to_save, "w") as txt_file:
 
 
 
-   
