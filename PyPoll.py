@@ -19,6 +19,10 @@ candidate_options = []
 
 candidate_votes= {}
 
+#initialize dictionary for voter turnout for each county
+
+
+
 # Track the winning candidate, vote count, and percentage
 
 winning_candidate = ""
@@ -137,7 +141,3 @@ with open(file_to_save, "w") as txt_file:
     #Save the winning candidate's results to the text file.
 
     txt_file.write(winning_candidate_summary)
-   
-
-
-
