@@ -203,7 +203,7 @@ The analysis of the election showed that:
     - Diana DeGette who received 73.8% of the vote and 272,892
     
 ## Election-Audit Summary
-> With some modifications, this script can be used for any future elections. By modifying the input file pathway for the `os.path.join()` function, any election whose results are logged into a .csv input file with the same format as the file used in this script example can be used for an audit. Even if the election results information was delivered as a .txt file, we could open the file for read using a similar `with` statemen like the one we used in the code in this analysis. We could then continue to iterate through every line of the code in the same manner as before:
+1.  With some modifications, this script can be used for any future elections. By modifying the input file pathway for the `os.path.join()` function, any election whose results are logged into a .csv input file with the same format as the file used in this script example can be used for an audit. Even if the election results information was delivered as a .txt file, we could open the file for read using a similar `with` statemen like the one we used in the code in this analysis. We could then continue to iterate through every line of the code in the same manner as before:
 
 `joinedfilepath = os.path.join("Resources", "election_data.txt")`
 
@@ -213,7 +213,7 @@ The analysis of the election showed that:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`for row in reader:`
 
-- This script could also be modified to prevent election fraud by checking the 'Ballot ID' of each vote for repeats. In the same manner as creating an empty list and appending each candidate name to the new list of candidate options when they first appear, the script could be adjusted to have an empty list of ballot id's and then append the ballot id to the list when each one is detected. If the ballot id is already added to the list but appears again in the voting data, then you could have part of the script reject the vote by having python add zero to the total vote count.
+2.  This script could also be modified to prevent election fraud by checking the 'Ballot ID' of each vote for repeats. In the same manner as creating an empty list and appending each candidate name to the new list of candidate options when they first appear, the script could be adjusted to have an empty list of ballot id's and then append the ballot id to the list when each one is detected. If the ballot id is already added to the list but appears again in the voting data, then you could have part of the script reject the vote by having python add zero to the total vote count.
 
 `ballot_id_list = []`
 
