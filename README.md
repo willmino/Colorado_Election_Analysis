@@ -205,7 +205,9 @@ The analysis of the election showed that:
     - Diana DeGette who received 73.8% of the vote and 272,892
     
 ## Election-Audit Summary
-1.  With some modifications, this script can be used for any future elections. By modifying the input file pathway for the `os.path.join()` function, any election whose results are logged into a .csv input file with the same format as the file used in this script example can be used for an audit. Even if the election results information was delivered as a .txt file, we could open the file for read using a similar `with` statement like the one we used in the code in this analysis. We could then continue to iterate through every line of the code in the same manner as before:
+The election commission should adopt this python script for use in all future elections. With some modifications, this script can be used to receive any election's input voter data. 
+
+1. By modifying the input file pathway for the `os.path.join()` function, any election whose results are logged into a .csv input file with the same format as the file used in this script example can be used for an audit. Even if the election results information was delivered as a .txt file, we could open the file for read using a similar `with` statement like the one we used in the code in this analysis. We could then continue to iterate through every line of the code in the same manner as before:
 
 `joinedfilepath = os.path.join("Resources", "election_data.txt")`
 
