@@ -199,6 +199,8 @@ The analysis of the election showed that:
     - Jefferson county had 10.5% of the total votes with 38,855 votes.
     - Denver had 82.8% of the total votes with 306,055 votes.
     - Arapahoe had 6.7% of the total votes with 24,801 votes.
+- The county with the largest number of votes:
+    - Denver
 - The winner of the election was:
     - Diana DeGette who received 73.8% of the vote and 272,892
     
