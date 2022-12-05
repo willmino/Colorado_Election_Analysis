@@ -15,7 +15,7 @@ The election audit was carried out by analyzing raw voter data to obtain the fol
 8. Calculate each county's percentage of votes out of the total election votes.
 9. Determine the county with the most votes.
 
-> To perform the election anaylsis and satisfy the criteria listed above, I used python to open a .csv file, read through the rows of the data to obtain relevant counts, and perform calculations and an analysis. I then printed the results to a command line, and wrote the results of the analysis to another .txt file.
+> To perform the election analysis and satisfy the criteria listed above, I used python to open a .csv file, read through the rows of the data to obtain relevant counts, and perform calculations and an analysis. I then printed the results to a command line, and wrote the results of the analysis to another .txt file.
 
 ## Resources
 
@@ -48,7 +48,7 @@ The election audit was carried out by analyzing raw voter data to obtain the fol
 
 * Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
 
-> Earlier in the code, we declared an empty list, `county_list`, to hold the names of all the Colorado counties voting in this election. We also declared an empty dictionary ,`county_votes` to hold all of county names as keys with their votes as the corresponding values. Later, using a double indented line of code relative to the `with open(file_to_load)` statement, we created a variable for`county_name` and set it equal to the index position 1 of `row` which represented the second column of data in the .csv file and contained the data for the county names. If county name was not previously detected by the code, the code would add `county_name` to `county_list`. Then, we declared a `county_name` number of keys in the `county_votes` dictionary with values equal to zero. While reading through every row, a single indented line of code added a value of `1` to each county's vote count whenever the name of the county was detected. Final county vote counts were represented by the dictionary `county_votes`. The keys in this dictionary were the county names and the values were the votes per each county. The code is summarized below.
+> Earlier in the code, we declared an empty list, `county_list`, to hold the names of all the Colorado counties voting in this election. We also declared an empty dictionary ,`county_votes` to hold all of the county names as keys with their votes as the corresponding values. Later, using a double indented line of code relative to the `with open(file_to_load)` statement, we created a variable for`county_name` and set it equal to the index position 1 of `row` which represented the second column of data in the .csv file and contained the data for the county names. If the county name was not previously detected by the code, the code would add `county_name` to `county_list`. Then, we declared a `county_name` number of keys in the `county_votes` dictionary with values equal to zero. While reading through every row, a single indented line of code added a value of `1` to each county's vote count whenever the name of the county was detected. Final county vote counts were represented by the dictionary `county_votes`. The keys in this dictionary were the county names and the values were the votes per each county. The code is summarized below.
 
 `if county_name not in county_list:`
 
