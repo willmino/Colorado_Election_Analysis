@@ -178,7 +178,10 @@ The election audit was carried out by analyzing raw voter data to obtain the fol
 
 `txt_file.write(winning_candidate_summary)`
 
-> The winning candidate was Diana DeGette. She received 73.8% of the total vote. She received a total of 272,892 votes.
+> The winning candidate was Diana DeGette. She received 73.8% of the total vote. She received a total of 272,892 votes. 
+> The following output was printed to the command line:
+
+![Deliverable_1](https://github.com/willmino/Election_Analysis/blob/main/Command%20Line%20prompt.png)
 
 ## Summary 
 The analysis of the election showed that:
